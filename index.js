@@ -13,5 +13,5 @@ global.HTTPError = class HTTPError extends Error {
         this.statusCode = statusCode;
     }
 };
-
-app.listen(process.env.PORT, () => console.log(`Listening on port ${process.env.PORT}`));
+var port = 5000;
+app.listen(port, () => console.log(`Listening on port ${port}`));

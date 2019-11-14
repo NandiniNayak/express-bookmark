@@ -7,7 +7,7 @@ passport.deserializeUser(UserModel.deserializeUser());
 
 passport.use(new JwtStrategy({
         jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-        secretOrKey: process.env.JWT_SECRET
+        secretOrKey: "secretkey"
     },
     async (jwt_payload, done) => {
         try{
